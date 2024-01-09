@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/icon.ico">
+    <title>Escuela Alem</title>
+    <!-- css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- css propio -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+      <!-- CDN para iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@1,500&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- scripts -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="scripts.js"></script>
+</head>
+<body class="container">
+    <header id="header" class="container-fluid">
+        <div class="row">
+            <div class="col" id="titulo">
+                <a href="index.html"><img src="images/logo.JPG" width="130px" alt="Logo" id="logo" class="img-fluid"></a>
+                <h1>EETP Nº 601  Leandro Alem</h1>
+            </div>
+        </div>
+    </header>
+                     <!-- barra de navegacion -->
+    <nav class="container-fluid">
+        <div class="row" style="position: relative;">
+            <nav class="col menu" id="nav">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#carousel">Institución</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#nosotros">Quienes Somos</a>
+                    </li>           
+                  </ul>
+            </nav>
+        </div>
+    </nav>
+    <section class="container-fluid" id="inicio">
+        <div class="row">
+            <div class="col">
+                <script type="text/javascript">
+                    document.write('<h2>Bienvenid@, ' +nombre+ '!</h2>')
+
+                    // document.write('<p class="Cuest"><u>Nombre</u>: ' +nombre+ '</h5>')
+                </script>
+            </div>
+        </div>
+    </section>
+    <section id="carousel">
+        <!-- inicio carousel BS -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <video src="images/primervid.mp4" class="d-block w-100" alt="primer video" controls></video>
+              </div>
+              <div class="carousel-item">
+                <video src="images/segundovid.mp4" class="d-block w-100" alt="segundo video" controls></video>
+              </div>
+              <div class="carousel-item">
+                <video src="images/tercervid.mp4" class="d-block w-100" alt="tercer video" controls></video>
+              </div>
+              <div class="carousel-item">
+                <video src="images/cuartovid.mp4" class="d-block w-100" alt="cuarto video" controls></video>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- fin carousel bootstrap -->
+    </section>
+    <section class="container-fluid" id="nosotros">
+      <div class="row">
+        <div class="col" id="card">
+            <!-- inicio card -->
+            <div class="card" style="width: 18rem;">
+              <img src="images/logo.JPG" class="card-img-top" alt="Escuela Alem">
+              <div class="card-body">
+                <h5 class="card-title">E.E.T.P. Nro 601 Leandro N. Alem</h5>
+                <!-- <p class="card-text">Nuestra institución ubicada en barrio Roma cuya oferta educativa es la tecnicatura en Informática Profesional y Personal. Su objetivo es propiciar la alfabetización digital de los cursantes, a través de la integración de áreas de conocimiento emergentes, como el pensamiento computacional, la programación y la robótica. Utilizando un aprendizaje innovador y colaborativo, alentando el trabajo interdisciplinario impulsado por el aprendizaje basado en proyectos.</p> -->
+                <!-- trigger modal -->
+                <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Informate sobre nuestra escuela.</a>
+              </div>
+              <!-- inicio modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Info</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Nuestra Institución ubicada en barrio Roma cuya oferta educativa es la Tecnicatura en Informática Profesional y Personal. Su objetivo es propiciar la alfabetización digital de los cursantes, a través de la integración de áreas de conocimiento emergentes, como el pensamiento computacional, la programación y la robótica. Utilizando un aprendizaje innovador y colaborativo, alentando el trabajo interdisciplinario impulsado por el aprendizaje basado en proyectos.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- fin modal -->
+            </div>
+            <!-- fin card -->
+        </div>
+        <div class="col" id="card2">
+            <!-- inicio card club de ciencias -->
+            <div class="card" style="width: 18rem;">
+              <img src="images/logoclub.png" class="card-img-top" alt="Logo club de ciencias">
+              <div class="card-body">
+                <h5 class="card-title">Nuestro club de ciencias</h5>
+                <p class="card-text">Somos un grupo de alumnos, docentes y directivos cuyo objetivo principal es el de despertar el interés por la investigación. Estamos inscriptos en la Red de Clubes de Ciencia.</p>
+                <a href="https://sites.google.com/view/club-de-ciencias-emc2" target="new" class="btn btn-warning">Tenemos nuestra propia página!</a>
+              </div>
+            </div>
+            <!-- fin card club -->
+          </div>
+      </div>
+      <div class="row" id="datos">
+          <div class="col" id="redes">
+            <p class="colBlack">Datos Institucionales:</p>
+            <!-- <ul class="nav" style="display: inline-block;">
+              <li class="nav-item">
+                <a href="#" target="new"><i class="nav-link bi bi-instagram colBlack"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="#" target="new"><i class="nav-link bi bi-envelope colBlack"></i></a>
+              </li>
+            </ul> -->
+            <ul class="nav tamaño" >
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/eetpnro601leandro.alem" target="new" id="ig"><i class="bi bi-instagram colRed"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfpKbKtKCtKcdPjzKBghwTBGhLSzRxxHcFZQstnKQHSbMwKJWSJxnpcgLwNlMJBhbdXdxq" target="new"><i class="bi bi-envelope colRed"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col" id="redes_club">
+            <p class="colBlack">Datos Club de ciencias:</p>
+            <ul class="nav tamaño" >
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/club_de_ciencias_emc2/" target="new" id="ig"><i class="bi bi-instagram colRed"></i></a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </section>
+    <footer>
+      <div id="copy">
+        <p>Página creada por Marcos Bracamonte de 6to Año- Todos los derechos reservados.©2022</p>
+      </div>
+      <nav id="redesMarcos">
+        <ul class="nav">
+            <li class="nav-item "><a href="https://www.facebook.com/marcossbrac/" target="new"><i class="nav-link bi bi-facebook colorFB"></i></a></li>
+            <li class="nav-item "><a href="https://www.instagram.com/marcossbrac/" target="new"><i class="nav-link bi bi-instagram colorIG"></i></a></li>
+            <li class="nav-item "><a href="https://twitter.com/marcos_braca" target="new"><i class="nav-link bi bi-twitter colorTW"></i></a></li>
+        </ul>
+      </nav>
+
+    </footer>
+
+
+    <!-- js propio -->
+<!-- <script src="scripts.js"></script> -->
+    <!-- bootstrap js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

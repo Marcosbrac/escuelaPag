@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+html{
+    background-color: #000000;
+    background-size: 26px 26px;
+    background-image:  repeating-linear-gradient(0deg, #1c1c1c, #1c1c1c 1.3px, #000000 1.3px, #000000);}
+body{
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'PT Serif', serif;
+}
+
+#logo{
+    float: left;   
+    margin-left: -12px;
+}
+
+#titulo{
+    background-color: #131313;
+    /* height: 100px; */
+}
+    #titulo h1{
+        font-size: 40px;
+        font-family: 'Libre Bodoni', serif;
+        float: right;
+        margin-top: 35px;
+        color: #fff;
+    }
+
+
+/* .cletter{
+    color: #000;
+} */
+#nav{
+    background-color: #86868b;
+    
+    /* height: 60px; */
+    /* position: sticky;
+    top: 0; */
+    /* color: #000; */
+}
+    #nav ul li a{
+        color: #000;
+        font-size: 18px;
+         padding: 15px;
+         /* padding-right: 40px; */
+        text-align: center;
+    }
+        #nav ul li a:hover{
+            background-color: #a4a4a8;
+        }
+
+.menu-fixed{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 250px;
+    width: 850px;
+    /*max-width: 1000px;
+    */border-radius: 0 0 15px 15px;
+    -webkit-border-radius: 0 0 15px 15px;
+    -moz-border-radius: 0 0 15px 15px;
+    -ms-border-radius: 0 0 15px 15px;
+    -o-border-radius: 0 0 15px 15px;
+}
+
+h2{
+    font-size: 50px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 60px;
+    /* margin-left: 60px; */
+    text-align: center;
+    text-shadow: 12px 12px 2px #000;
+}
+#inicio{
+    background-color: rgb(13, 14, 70);
+    height: 800px;
+    background-image: url(images/fondoIni.JPG);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.95;
+    /* padding-left: 5px; */
+    
+}
+
+#carousel{
+    background-color: rgb(65, 65, 65);
+    /* height: 550px; */
+}
+
+#nosotros{
+    /* height: 800px; */
+    /* background-color: #333333; */
+    background: -webkit-radial-gradient(bottom right, #202020 10%, #4d4d4d, #202020);
+    background: -moz-radial-gradient(bottom right, #202020 10%, #4d4d4d, #202020);
+    background: -o-radial-gradient(bottom right, #202020 10%, #4d4d4d, #202020);
+    
+
+}
+#card{
+    margin-top: 70px;
+    margin-left: 100px;
+}
+#card2{
+    margin-top: 70px;
+}
+
+
+#datos{
+    margin-top: 20px;
+    /* margin-left: 50px; */
+}
+
+#redes{
+    font-size: 30px;
+    margin-left: 100px;
+}
+    #redes ul{
+        margin-left: 60px;
+    }
+
+#redes_club{
+    font-size: 30px;
+    margin-left: 0px;
+}
+    #redes_club ul{
+      margin-left: 90px;
+    }
+
+
+.tamaño{
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.colBlack{
+    color: #fff;
+}
+
+.colRed{
+    /* color: #1561f0; */
+    color: #000;
+}
+    a .colRed:hover{
+        /* color: #6f9ef6; */
+        color: #1561f0;
+    }
+
+
+footer{
+    /* background-color: #131313; */
+    background: -webkit-radial-gradient(top left, #131313, #1a1a1a);
+    background: -moz-radial-gradient(bottom right, #131313, #1a1a1a);
+    background: -o-radial-gradient(bottom right, #131313, #1a1a1a);
+    height: 70px;
+    /* padding: 20px; */
+}
+#copy{
+    float: left;
+    padding: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+#redesMarcos{
+    float: right;
+    padding: 10px;
+    font-size: 26px;
+}
+
+
+.colorFB{
+    color: #3b5998;
+}
+.colorIG{
+    /* background: #f09433;  */
+    color: #bc1888;
+    /* color: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); */
+}
+.colorIG:hover{
+    color: #e21da3;
+}
+.colorTW{
+    color: #00acee;
+}
+.colorTW:hover{
+    color: #1abeff;
+}
